@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vijay Vidhyanikethan High School, established in 1996, provides quality education for Classes 1-10 in Thandriyal, Telangana." />
+  <meta name="keywords" content="Vijay Vidhyanikethan High School, Thandriyal, Telangana, school, education, Classes 1 to 10, State Board" />
+  <meta name="author" content="Vijay Vidhyanikethan High School" />
+  <meta name="theme-color" content="#0a1628" />
+  <meta property="og:title" content="Vijay Vidhyanikethan High School | Thandriyal" />
+  <meta property="og:description" content="Empowering Young Minds for a Better Tomorrow. Quality education for Classes 1-10 in Thandriyal, Telangana since 1996." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/school-campus.jpg" />
+  <title>Vijay Vidhyanikethan High School | Thandriyal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__container">
+      <a href="#home" class="navbar__brand" aria-label="Vijay Vidhyanikethan High School Home">
+        <div class="brand__monogram" aria-hidden="true">VVN</div>
+        <div class="brand__text">
+          <span class="brand__name">Vijay Vidhyanikethan</span>
+          <span class="brand__sub">High School</span>
+        </div>
+      </a>
+      <nav class="navbar__nav" role="navigation" aria-label="Primary navigation">
+        <ul class="nav__list" role="list">
+          <li><a href="#home"       class="nav__link" aria-current="page">Home</a></li>
+          <li><a href="#about"      class="nav__link">About</a></li>
+          <li><a href="#admissions" class="nav__link">Admissions</a></li>
+          <li><a href="#transport"  class="nav__link">Transport</a></li>
+          <li><a href="#events"     class="nav__link">Events</a></li>
+          <li><a href="#contact"    class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__actions">
+        <button class="btn btn--enquire" onclick="document.getElementById('admissions').scrollIntoView({behavior:'smooth'})" aria-label="Open Admission Enquiry">Admissions Open</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle dark mode">
+          <i class="fa-solid fa-moon" id="themeIcon" aria-hidden="true"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-menu__list" role="list">
+          <li><a href="#home"       class="mobile-menu__link" id="mob-home">Home</a></li>
+          <li><a href="#about"      class="mobile-menu__link" id="mob-about">About</a></li>
+          <li><a href="#admissions" class="mobile-menu__link" id="mob-admissions">Admissions</a></li>
+          <li><a href="#transport"  class="mobile-menu__link" id="mob-transport">Transport</a></li>
+          <li><a href="#events"     class="mobile-menu__link" id="mob-events">Events</a></li>
+          <li><a href="#contact"    class="mobile-menu__link" id="mob-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero" aria-label="Hero banner">
+      <div class="hero__bg" role="img" aria-label="Vijay Vidhyanikethan High School campus"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <div class="hero__badge animate-fade-up">
+          <i class="fa-solid fa-star" aria-hidden="true"></i> Established 1996
+        </div>
+        <h1 class="hero__title animate-fade-up animate-delay-1">
+          Empowering Young Minds<br />
+          <span class="hero__title--accent">for a Better Tomorrow</span>
+        </h1>
+        <p class="hero__subtitle animate-fade-up animate-delay-2">
+          Welcome to Vijay Vidhyanikethan High School &mdash; nurturing knowledge, discipline and excellence since 1996.
+        </p>
+        <div class="hero__actions animate-fade-up animate-delay-3">
+          <a href="#about" class="btn btn--primary" id="hero-explore">
+            <i class="fa-solid fa-compass" aria-hidden="true"></i> Explore Our School
+          </a>
+          <a href="#admissions" class="btn btn--outline-white" id="hero-enquiry">
+            <i class="fa-solid fa-file-pen" aria-hidden="true"></i> Admission Enquiry
+          </a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><div class="hero__scroll-dot"></div></div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="School quick facts">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-card__icon" aria-hidden="true"><i class="fa-solid fa-award"></i></div>
+            <div class="stat-card__number"><span class="counter" data-target="30">0</span>+</div>
+            <div class="stat-card__label">Years of Educational Excellence</div>
+          </div>
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-card__icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="stat-card__number">1st &ndash; 10th</div>
+            <div class="stat-card__label">Classes Offered</div>
+          </div>
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-card__icon" aria-hidden="true"><i class="fa-solid fa-book-open"></i></div>
+            <div class="stat-card__number">State Board</div>
+            <div class="stat-card__label">Curriculum</div>
+          </div>
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-card__icon" aria-hidden="true"><i class="fa-solid fa-bus"></i></div>
+            <div class="stat-card__number">Safe</div>
+            <div class="stat-card__label">Transport Around Thandriyal</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__tag">Who We Are</span>
+          <h2 class="section__title" id="about-heading">About Vijay Vidhyanikethan High School</h2>
+          <p class="section__subtitle">Building the foundation for every child's future since 1996</p>
+        </div>
+        <div class="about__grid">
+          <div class="about__image-wrapper animate-on-scroll">
+            <img src="images/school-campus.jpg" alt="Vijay Vidhyanikethan High School campus building in Thandriyal, Telangana" class="about__image" loading="lazy" />
+            <div class="about__image-badge" aria-hidden="true">
+              <span class="badge-year">1996</span>
+              <span class="badge-label">Est.</span>
+            </div>
+          </div>
+          <div class="about__content animate-on-scroll">
+            <p class="about__lead">Vijay Vidhyanikethan High School has been a cornerstone of quality education in Thandriyal, Telangana since 1996. We offer Classes 1 through 10 under the State Board curriculum, with a strong focus on academic excellence, discipline and the overall development of every student.</p>
+            <p class="about__body">Our school provides a safe, nurturing and student-focused environment where children are encouraged to learn, grow and realise their full potential. We believe that education must go beyond textbooks &mdash; instilling values, confidence and a love of learning in every child.</p>
+            <p class="about__body">With modern learning facilities, committed guidance and a supportive school community, we strive to prepare students for the challenges of tomorrow while grounding them in the values of today.</p>
+            <div class="about__features">
+              <div class="feature-pill"><i class="fa-solid fa-check-circle" aria-hidden="true"></i> Quality Education</div>
+              <div class="feature-pill"><i class="fa-solid fa-check-circle" aria-hidden="true"></i> Student Development</div>
+              <div class="feature-pill"><i class="fa-solid fa-check-circle" aria-hidden="true"></i> Experienced Guidance</div>
+              <div class="feature-pill"><i class="fa-solid fa-check-circle" aria-hidden="true"></i> Safe Environment</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACILITIES -->
+    <section id="facilities" class="facilities section section--alt" aria-labelledby="facilities-heading">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__tag">What We Offer</span>
+          <h2 class="section__title" id="facilities-heading">Our Facilities</h2>
+          <p class="section__subtitle">Equipped to support the growth and safety of every student</p>
+        </div>
+        <div class="facilities__grid">
+          <article class="facility-card animate-on-scroll">
+            <div class="facility-card__icon" aria-hidden="true"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h3 class="facility-card__title">Digital Classrooms</h3>
+            <p class="facility-card__desc">Interactive and technology-supported learning experiences for students across all classes.</p>
+          </article>
+          <article class="facility-card animate-on-scroll">
+            <div class="facility-card__icon" aria-hidden="true"><i class="fa-solid fa-person-running"></i></div>
+            <h3 class="facility-card__title">Playground</h3>
+            <p class="facility-card__desc">Open space for sports, physical education and student activities to promote health and teamwork.</p>
+          </article>
+          <article class="facility-card animate-on-scroll">
+            <div class="facility-card__icon" aria-hidden="true"><i class="fa-solid fa-bus-simple"></i></div>
+            <h3 class="facility-card__title">School Transport</h3>
+            <p class="facility-card__desc">Reliable school transport serving Thandriyal and surrounding areas for safe daily commutes.</p>
+          </article>
+          <article class="facility-card animate-on-scroll">
+            <div class="facility-card__icon" aria-hidden="true"><i class="fa-solid fa-camera"></i></div>
+            <h3 class="facility-card__title">CCTV Surveillance</h3>
+            <p class="facility-card__desc">School premises monitored with CCTV cameras to support student safety at all times.</p>
+          </article>
+          <article class="facility-card animate-on-scroll">
+            <div class="facility-card__icon" aria-hidden="true"><i class="fa-solid fa-droplet"></i></div>
+            <h3 class="facility-card__title">RO Drinking Water</h3>
+            <p class="facility-card__desc">Clean RO-purified drinking water facility available for students throughout the school day.</p>
+          </article>
+          <article class="facility-card animate-on-scroll">
+            <div class="facility-card__icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="facility-card__title">Safe Learning Environment</h3>
+            <p class="facility-card__desc">A supportive, disciplined and inclusive environment that encourages every child to thrive.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMISSIONS -->
+    <section id="admissions" class="admissions section" aria-labelledby="admissions-heading">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__tag">Join Our School</span>
+          <h2 class="section__title" id="admissions-heading">Admissions</h2>
+          <p class="section__subtitle">Begin your child's learning journey with Vijay Vidhyanikethan High School.</p>
+        </div>
+        <div class="admissions__grid">
+          <div class="admissions__info animate-on-scroll">
+            <div class="admissions__info-card">
+              <div class="admissions__info-icon" aria-hidden="true"><i class="fa-solid fa-door-open"></i></div>
+              <h3>Admissions Open</h3>
+              <p>Admissions are available for Classes 1 through 10, subject to school admission policies and seat availability. We welcome all students seeking quality education.</p>
+            </div>
+            <div class="admissions__steps">
+              <div class="step">
+                <div class="step__num" aria-hidden="true">01</div>
+                <div class="step__content"><h4>Fill Enquiry Form</h4><p>Complete the admission enquiry form with student and parent details.</p></div>
+              </div>
+              <div class="step">
+                <div class="step__num" aria-hidden="true">02</div>
+                <div class="step__content"><h4>School Contact</h4><p>Our team will reach out to discuss admission requirements and availability.</p></div>
+              </div>
+              <div class="step">
+                <div class="step__num" aria-hidden="true">03</div>
+                <div class="step__content"><h4>Visit Our Campus</h4><p>Schedule a visit to Vijay Vidhyanikethan High School in Thandriyal.</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="admissions__form-wrapper animate-on-scroll">
+            <form id="admissionForm" class="form" novalidate aria-label="Admission enquiry form">
+              <h3 class="form__title">Admission Enquiry</h3>
+              <div class="form__group">
+                <label for="studentName" class="form__label">Student Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="studentName" name="studentName" class="form__input" placeholder="Enter student full name" autocomplete="name" aria-required="true" />
+                <span class="form__error" id="studentName-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form__group">
+                <label for="parentName" class="form__label">Parent / Guardian Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="parentName" name="parentName" class="form__input" placeholder="Enter parent or guardian name" autocomplete="name" aria-required="true" />
+                <span class="form__error" id="parentName-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form__group">
+                <label for="phone" class="form__label">Phone Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form__input" placeholder="Enter 10-digit mobile number" autocomplete="tel" aria-required="true" maxlength="10" inputmode="numeric" />
+                <span class="form__error" id="phone-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form__group">
+                <label for="classApplying" class="form__label">Class Applying For <span aria-hidden="true">*</span></label>
+                <select id="classApplying" name="classApplying" class="form__select" aria-required="true">
+                  <option value="">Select Class</option>
+                  <option value="Class 1">1st Class</option>
+                  <option value="Class 2">2nd Class</option>
+                  <option value="Class 3">3rd Class</option>
+                  <option value="Class 4">4th Class</option>
+                  <option value="Class 5">5th Class</option>
+                  <option value="Class 6">6th Class</option>
+                  <option value="Class 7">7th Class</option>
+                  <option value="Class 8">8th Class</option>
+                  <option value="Class 9">9th Class</option>
+                  <option value="Class 10">10th Class</option>
+                </select>
+                <span class="form__error" id="classApplying-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form__group">
+                <label for="admissionMessage" class="form__label">Message <span aria-hidden="true">*</span></label>
+                <textarea id="admissionMessage" name="admissionMessage" class="form__textarea" rows="4" placeholder="Any additional information or queries..." aria-required="true"></textarea>
+                <span class="form__error" id="admissionMessage-error" role="alert" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="admissionSubmit">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Submit Enquiry
+              </button>
+              <div class="form__success" id="admissionSuccess" role="status" aria-live="polite" hidden>
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Thank you! Your admission enquiry has been submitted. We will contact you shortly.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSPORT -->
+    <section id="transport" class="transport section section--alt" aria-labelledby="transport-heading">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__tag">Getting to School</span>
+          <h2 class="section__title" id="transport-heading">Safe &amp; Reliable School Transport</h2>
+          <p class="section__subtitle">Ensuring every student travels safely every day</p>
+        </div>
+        <div class="transport__grid">
+          <div class="transport__image-wrapper animate-on-scroll">
+            <img src="images/school-buses.jpg" alt="Three yellow Eicher school buses of Vijay Vidhyanikethan High School parked at campus" class="transport__image" loading="lazy" />
+          </div>
+          <div class="transport__content animate-on-scroll">
+            <p class="transport__lead">Vijay Vidhyanikethan High School provides dedicated school transportation in and around Thandriyal to help students travel safely and conveniently each day.</p>
+            <div class="transport__features">
+              <div class="transport-feat">
+                <div class="transport-feat__icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="transport-feat__text"><h4>Safe Travel</h4><p>Student safety is our top priority with responsible operations and well-maintained vehicles.</p></div>
+              </div>
+              <div class="transport-feat">
+                <div class="transport-feat__icon" aria-hidden="true"><i class="fa-solid fa-route"></i></div>
+                <div class="transport-feat__text"><h4>Regular Routes</h4><p>Consistent daily routes ensuring students arrive at school and return home on time.</p></div>
+              </div>
+              <div class="transport-feat">
+                <div class="transport-feat__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="transport-feat__text"><h4>Convenient Pickup</h4><p>Pickup and drop points designed to serve students from Thandriyal and surrounding areas.</p></div>
+              </div>
+              <div class="transport-feat">
+                <div class="transport-feat__icon" aria-hidden="true"><i class="fa-solid fa-children"></i></div>
+                <div class="transport-feat__text"><h4>Student-Friendly</h4><p>Comfortable buses maintained specifically for school children to travel with ease.</p></div>
+              </div>
+            </div>
+            <div class="transport__note">
+              <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+              <p>For information about available routes and pickup points, please <a href="#contact" class="transport__note-link">contact the school</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events" class="events section" aria-labelledby="events-heading">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__tag">School Life</span>
+          <h2 class="section__title" id="events-heading">Beyond the Classroom</h2>
+          <p class="section__subtitle">We believe education goes beyond academics. Students are encouraged to participate in cultural programs, school events and extracurricular activities.</p>
+        </div>
+        <div class="events__grid">
+          <div class="events__hero animate-on-scroll">
+            <button class="gallery-btn" onclick="openLightbox('images/school-event.jpg', 'Students performing a cultural dance during the school annual event')" aria-label="View cultural dance performance photo in full screen" id="event-hero-btn">
+              <img src="images/school-event.jpg" alt="Students performing a colourful cultural dance during the school annual event" class="events__hero-image" loading="lazy" />
+              <div class="gallery-btn__overlay" aria-hidden="true">
+                <i class="fa-solid fa-expand"></i><span>View Full Screen</span>
+              </div>
+            </button>
+          </div>
+          <div class="events__categories">
+            <div class="event-card animate-on-scroll">
+              <div class="event-card__icon" aria-hidden="true"><i class="fa-solid fa-masks-theater"></i></div>
+              <div class="event-card__content"><h3>Cultural Programs</h3><p>Dance, music and drama performances that celebrate our rich cultural heritage and nurture student talent.</p></div>
+            </div>
+            <div class="event-card animate-on-scroll">
+              <div class="event-card__icon" aria-hidden="true"><i class="fa-solid fa-flag"></i></div>
+              <div class="event-card__content"><h3>School Celebrations</h3><p>Annual Day, Independence Day, Republic Day and other national and school celebrations observed with pride.</p></div>
+            </div>
+            <div class="event-card animate-on-scroll">
+              <div class="event-card__icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
+              <div class="event-card__content"><h3>Student Activities</h3><p>Quiz competitions, drawing contests and group activities to encourage creativity and teamwork.</p></div>
+            </div>
+            <div class="event-card animate-on-scroll">
+              <div class="event-card__icon" aria-hidden="true"><i class="fa-solid fa-trophy"></i></div>
+              <div class="event-card__content"><h3>Sports &amp; Games</h3><p>Sports day events and regular physical activity to promote health, discipline and team spirit.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery section section--alt" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__tag">Photo Gallery</span>
+          <h2 class="section__title" id="gallery-heading">Life at VVN</h2>
+          <p class="section__subtitle">A glimpse into our campus, events and school transport</p>
+        </div>
+        <div class="gallery__tabs" role="tablist" aria-label="Gallery categories">
+          <button class="gallery__tab gallery__tab--active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="gallery__tab" data-filter="campus" role="tab" aria-selected="false">Campus</button>
+          <button class="gallery__tab" data-filter="events" role="tab" aria-selected="false">Events</button>
+          <button class="gallery__tab" data-filter="transport" role="tab" aria-selected="false">Transport</button>
+        </div>
+        <div class="gallery__grid" id="gallery-grid" role="tabpanel">
+          <div class="gallery__item animate-on-scroll" data-category="campus">
+            <button class="gallery-btn" onclick="openLightbox('images/school-campus.jpg', 'Vijay Vidhyanikethan High School main campus building in Thandriyal')" aria-label="View school campus photo" id="gallery-campus-btn">
+              <img src="images/school-campus.jpg" alt="Vijay Vidhyanikethan High School main campus building" class="gallery__image" loading="lazy" />
+              <div class="gallery__caption" aria-hidden="true"><i class="fa-solid fa-expand"></i><span>School Campus</span></div>
+            </button>
+          </div>
+          <div class="gallery__item animate-on-scroll" data-category="events">
+            <button class="gallery-btn" onclick="openLightbox('images/school-event.jpg', 'Students performing cultural dance at the school annual event')" aria-label="View school event photo" id="gallery-event-btn">
+              <img src="images/school-event.jpg" alt="Students performing a colourful cultural dance at the annual school event" class="gallery__image" loading="lazy" />
+              <div class="gallery__caption" aria-hidden="true"><i class="fa-solid fa-expand"></i><span>Cultural Event</span></div>
+            </button>
+          </div>
+          
+          <div class="gallery__item animate-on-scroll" data-category="events">
+            <button class="gallery-btn" onclick="openLightbox('images/event-dance-orange.jpg', 'Students performing an energetic orange-saree dance at the school annual event')" aria-label="View orange saree dance photo">
+              <img src="images/event-dance-orange.jpg" alt="Students in orange sarees performing a dance" class="gallery__image" loading="lazy" />
+              <div class="gallery__caption" aria-hidden="true"><i class="fa-solid fa-expand"></i><span>Dance Performance</span></div>
+            </button>
+          </div>
+
+          <div class="gallery__item animate-on-scroll" data-category="events">
+            <button class="gallery-btn" onclick="openLightbox('images/event-classical-dance.jpg', 'Student performing classical solo dance at Anandha Tharangini event')" aria-label="View classical solo dance photo">
+              <img src="images/event-classical-dance.jpg" alt="Student performing a classical solo dance" class="gallery__image" loading="lazy" />
+              <div class="gallery__caption" aria-hidden="true"><i class="fa-solid fa-expand"></i><span>Classical Solo</span></div>
+            </button>
+          </div>
+
+          <div class="gallery__item animate-on-scroll" data-category="events">
+            <button class="gallery-btn" onclick="openLightbox('images/event-kids-dance.png', 'Young children performing a group dance on stage at the school event')" aria-label="View kids group dance photo">
+              <img src="images/event-kids-dance.png" alt="Young children performing a group dance" class="gallery__image" loading="lazy" />
+              <div class="gallery__caption" aria-hidden="true"><i class="fa-solid fa-expand"></i><span>Kids Performance</span></div>
+            </button>
+          </div>
+
+          <div class="gallery__item animate-on-scroll" data-category="events">
+            <button class="gallery-btn" onclick="openLightbox('images/event-classical-group.png', 'Students performing a colourful classical group dance at the school annual event')" aria-label="View classical group dance photo">
+              <img src="images/event-classical-group.png" alt="Students performing a colourful classical group dance" class="gallery__image" loading="lazy" />
+              <div class="gallery__caption" aria-hidden="true"><i class="fa-solid fa-expand"></i><span>Group Classical</span></div>
+            </button>
+          </div>
+
+          <div class="gallery__item animate-on-scroll" data-category="events">
+            <button class="gallery-btn" onclick="openLightbox('images/event-drama-hanuman.jpg', 'Students performing the Hanuman drama skit at the VVN school cultural event')" aria-label="View Hanuman drama skit photo">
+              <img src="images/event-drama-hanuman.jpg" alt="Students performing a mythological drama skit featuring Hanuman" class="gallery__image" loading="lazy" />
+              <div class="gallery__caption" aria-hidden="true"><i class="fa-solid fa-expand"></i><span>Drama Skit</span></div>
+            </button>
+          </div>
+
+          <div class="gallery__item animate-on-scroll" data-category="transport">
+            <button class="gallery-btn" onclick="openLightbox('images/school-buses.jpg', 'Three yellow school buses of Vijay Vidhyanikethan High School')" aria-label="View school buses photo" id="gallery-buses-btn">
+              <img src="images/school-buses.jpg" alt="Three yellow Eicher school buses of Vijay Vidhyanikethan High School" class="gallery__image" loading="lazy" />
+              <div class="gallery__caption" aria-hidden="true"><i class="fa-solid fa-expand"></i><span>School Buses</span></div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__tag">Reach Us</span>
+          <h2 class="section__title" id="contact-heading">Get in Touch</h2>
+          <p class="section__subtitle">We would love to hear from you. Reach out for any queries.</p>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__info animate-on-scroll">
+            <div class="contact__school-name">
+              <div class="brand__monogram brand__monogram--sm" aria-hidden="true">VVN</div>
+              <div><h3>Vijay Vidhyanikethan High School</h3><p>Thandriyal, Telangana, India</p></div>
+            </div>
+            <div class="contact__details">
+              <div class="contact__item">
+                <div class="contact__item-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                <div><h4>Address</h4><p>Thandriyal, Telangana, India</p></div>
+              </div>
+              <div class="contact__item">
+                <div class="contact__item-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+                <!-- ADD SCHOOL PHONE NUMBER -->
+                <div><h4>Phone</h4><p class="contact__placeholder">+91 9912000444</p></div>
+              </div>
+              <div class="contact__item">
+                <div class="contact__item-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+                <!-- ADD SCHOOL EMAIL -->
+                <div><h4>Email</h4><p class="contact__placeholder">[Contact school for email address]</p></div>
+              </div>
+            </div>
+            <a href="https://maps.app.goo.gl/UXfQNpuX3U9tM7zH9" target="_blank" rel="noopener noreferrer" class="btn btn--map" id="maps-btn" aria-label="View school on Google Maps">
+              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> View on Google Maps
+            </a>
+            <div class="contact__map-preview">
+              <a href="https://maps.app.goo.gl/UXfQNpuX3U9tM7zH9" target="_blank" rel="noopener noreferrer" class="contact__map-link" aria-label="Open school location in Google Maps">
+                <div class="contact__map-placeholder" aria-hidden="true">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  <span>Thandriyal, Telangana</span>
+                  <small>Click to open in Google Maps</small>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="contact__form-wrapper animate-on-scroll">
+            <form id="contactForm" class="form" novalidate aria-label="Contact form">
+              <h3 class="form__title">Send Us a Message</h3>
+              <div class="form__group">
+                <label for="contactParentName" class="form__label">Parent / Guardian Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="contactParentName" name="contactParentName" class="form__input" placeholder="Enter your name" autocomplete="name" aria-required="true" />
+                <span class="form__error" id="contactParentName-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form__group">
+                <label for="contactPhone" class="form__label">Phone Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="contactPhone" name="contactPhone" class="form__input" placeholder="Enter 10-digit mobile number" autocomplete="tel" aria-required="true" maxlength="10" inputmode="numeric" />
+                <span class="form__error" id="contactPhone-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form__group">
+                <label for="contactMessage" class="form__label">Message <span aria-hidden="true">*</span></label>
+                <textarea id="contactMessage" name="contactMessage" class="form__textarea" rows="5" placeholder="Write your message or query..." aria-required="true"></textarea>
+                <span class="form__error" id="contactMessage-error" role="alert" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="contactSubmit">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Message
+              </button>
+              <div class="form__success" id="contactSuccess" role="status" aria-live="polite" hidden>
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <p>Thank you for reaching out! We will get back to you shortly.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <div class="brand__monogram" aria-hidden="true">VVN</div>
+              <div class="brand__text">
+                <span class="brand__name">Vijay Vidhyanikethan</span>
+                <span class="brand__sub">High School</span>
+              </div>
+            </div>
+            <p class="footer__tagline">"Empowering Young Minds for a Better Tomorrow"</p>
+            <p class="footer__est">Established 1996 &middot; Thandriyal, Telangana</p>
+            <div class="footer__social">
+              <a href="http://www.youtube.com/@VVNSCHOOL-ce4tb" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit VVN School on YouTube" id="youtube-link">
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__col-title">Quick Links</h3>
+            <ul class="footer__links" role="list">
+              <li><a href="#home" class="footer__link">Home</a></li>
+              <li><a href="#about" class="footer__link">About Us</a></li>
+              <li><a href="#admissions" class="footer__link">Admissions</a></li>
+              <li><a href="#transport" class="footer__link">Transport</a></li>
+              <li><a href="#events" class="footer__link">Events</a></li>
+              <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__col-title">Facilities</h3>
+            <ul class="footer__links" role="list">
+              <li><a href="#facilities" class="footer__link">Digital Classrooms</a></li>
+              <li><a href="#facilities" class="footer__link">Playground</a></li>
+              <li><a href="#transport" class="footer__link">Transport</a></li>
+              <li><a href="#facilities" class="footer__link">CCTV Surveillance</a></li>
+              <li><a href="#facilities" class="footer__link">RO Drinking Water</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__col-title">Location</h3>
+            <p class="footer__address">Thandriyal, Telangana, India</p>
+            <a href="https://maps.app.goo.gl/UXfQNpuX3U9tM7zH9" target="_blank" rel="noopener noreferrer" class="footer__map-link" aria-label="Get directions on Google Maps">
+              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copyright">&copy; 2026 Vijay Vidhyanikethan High School. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <div class="lightbox__backdrop" onclick="closeLightbox()"></div>
+    <button class="lightbox__close" onclick="closeLightbox()" aria-label="Close image viewer" id="lightbox-close">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <div class="lightbox__content">
+      <img src="" alt="" class="lightbox__image" id="lightboxImage" />
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top of page" title="Back to top" hidden>
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="js/script.js?v=2"></script>
+</body>
+</html>
